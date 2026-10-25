@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple starting point for an English learning website.">
+    <title>English Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="English Page home">english<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#practice">Practice</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">A little progress, every day</p>
+        <h1 id="page-title">Make English<br><span>your own.</span></h1>
+        <p class="intro-copy">A calm place to learn, practice, and find the words you need.</p>
+        <a class="primary-link" href="#practice">Explore today’s word <span aria-hidden="true">&rarr;</span></a>
+        <div class="page-mark" aria-hidden="true">EN<br><span>01</span></div>
+      </section>
+
+      <section class="practice" id="practice" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <p class="eyebrow">Your daily prompt</p>
+          <h2 id="practice-title">One good word.</h2>
+        </div>
+        <div class="word-panel">
+          <div>
+            <p class="word-label">Today’s word</p>
+            <p class="word" id="daily-word">curious</p>
+            <p class="definition" id="word-definition"> eager to know or learn something</p>
+          </div>
+          <button class="word-button" id="word-button" type="button" aria-label="Show another word" title="Show another word">
+            <span aria-hidden="true">&#8635;</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">A note to begin</p>
+        <h2 id="about-title">Keep it simple.<br>Keep showing up.</h2>
+        <p>This is your space to shape. Add lessons, notes, or anything that helps English feel a little more natural.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>English Page</span>
+      <span>Made for the next word.</span>
+    </footer>
+  </body>
+</html>
